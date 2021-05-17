@@ -1,0 +1,120 @@
+:root {
+  --primary-color: hsl(277, 64%, 61%);
+  --soft-cyan: hsl(174, 77%, 80%);
+  --strong-cyan: hsl(174, 86%, 45%);
+  --light-grayish-red: hsl(14, 92%, 95%);
+  --Light-red: hsl(15, 100%, 70%);
+  --pale-blue: hsl(226, 100%, 87%);
+  --white: hsl(0, 0%, 100%);
+  --very-pale-blue: hsl(230, 100%, 99%);
+  --light-grayish-blue: hsl(224, 65%, 95%);
+  --light-grayish-blue: hsl(223, 50%, 87%);
+  --grayish-blue: hsl(225, 20%, 60%);
+  --dark-desaturated-blue: hsl(227, 35%, 25%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  background-color: var(--very-pale-blue);
+}
+
+.heading {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.main-heading {
+  font-weight: 800;
+  color: var(--dark-desaturated-blue);
+}
+
+.sub-heading {
+  color: var(--grayish-blue);
+  padding-top: 10px;
+}
+
+.card {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+  box-shadow: 0 3px 10px 0 var(--light-grayish-blue);
+  border-radius: 8px;
+  padding: 40px;
+  min-width: 33%;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.price-row-text {
+  color: var(--grayish-blue);
+}
+
+.price {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.price h1 {
+  font-weight: 800;
+  color: var(--dark-desaturated-blue);
+  padding-right: 3px;
+}
+
+.page-views-text {
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 1.2;
+}
+
+.slider-container {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background: var(--light-grayish-blue);
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background-image: url('./images/icon-slider.svg');
+  background: var(--strong-cyan);
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px 5px var(--softCyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
