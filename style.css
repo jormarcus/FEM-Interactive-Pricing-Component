@@ -23,12 +23,11 @@ body {
   font-size: 15px;
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
-  background-color: var(--very-pale-blue);
 }
 
 .heading {
   position: fixed;
-  top: 15%;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -44,9 +43,26 @@ body {
   padding-top: 10px;
 }
 
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--very-pale-blue);
+  min-width: 90vw;
+  min-height: 80vh;
+  background-image: url('/images/pattern-circles.svg'),
+    url('/images/bg-pattern.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, top;
+  border-radius: 10px;
+  margin: 40px;
+  box-shadow: 0 3px 10px 0 var(--light-grayish-blue);
+}
+
 .card {
   position: fixed;
-  top: 55%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--white);
@@ -105,10 +121,12 @@ body {
   width: 25px;
   height: 25px;
   background-image: url('./images/icon-slider.svg');
-  background: var(--strong-cyan);
+  background-color: var(--strong-cyan);
   cursor: pointer;
   border-radius: 50%;
   box-shadow: 0 10px 15px 5px var(--softCyan);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .attribution {
