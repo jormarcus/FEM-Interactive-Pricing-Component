@@ -23,6 +23,7 @@ body {
   font-size: 15px;
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
+  color: var(--dark-desaturated-blue);
 }
 
 .heading {
@@ -68,8 +69,16 @@ body {
   background-color: var(--white);
   box-shadow: 0 3px 10px 0 var(--light-grayish-blue);
   border-radius: 8px;
-  padding: 40px;
-  min-width: 33%;
+  min-width: 40%;
+}
+
+.card-top-section {
+  border-bottom: 1px solid var(--light-grayish-blue);
+  padding: 40px 40px 20px 40px;
+}
+
+.card-bottom-section {
+  padding: 40px 40px 20px 40px;
 }
 
 .price-row {
@@ -127,6 +136,10 @@ body {
   box-shadow: 0 10px 15px 5px var(--softCyan);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.toggle-row {
+  padding-bottom: 40px;
 }
 
 .attribution {
