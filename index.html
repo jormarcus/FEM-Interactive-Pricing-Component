@@ -32,7 +32,7 @@
       <div class="card">
         <div class="card-top-section">
           <div class="price-row">
-            <p class="page-views-text">100K Pageviews</p>
+            <p id="page-views-text">100K Pageviews</p>
             <div class="price">
               <h1>$</h1>
               <h1 id="price-amount">16.00</h1>
@@ -42,9 +42,9 @@
           <div class="slider-container">
             <input
               type="range"
-              min="1.00"
-              max="32.00"
-              value="16.00"
+              min="1"
+              max="5"
+              value=""
               class="slider"
               id="price-slider"
             />
@@ -52,7 +52,7 @@
           <div class="billing-row">
             <p class="text monthly-text">Monthly Billing</p>
             <label class="switch">
-              <input type="checkbox" />
+              <input type="checkbox" id="toggle-checkbox" />
               <span class="toggle round"></span>
             </label>
             <div class="flex">

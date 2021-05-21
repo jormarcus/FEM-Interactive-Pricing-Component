@@ -111,7 +111,7 @@ body {
   padding-right: 3px;
 }
 
-.page-views-text {
+#page-views-text {
   color: var(--grayish-blue);
   text-transform: uppercase;
   letter-spacing: 1.2;
